@@ -22,7 +22,7 @@ h1 {color:
 /*Reutilizar el codigo*/
 
 .Tarjeta {
-    width: 320px;
+    width: 380px;
     background-color: dimgray;
     border-radius: 3%;
     /*CENTRAR ELEMENTOS*/
@@ -31,7 +31,7 @@ h1 {color:
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 15px;
     transition: all 0.4s ease-in-out; /*TRANSICION SUAVE*/
 }
 
