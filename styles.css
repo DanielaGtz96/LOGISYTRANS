@@ -1,0 +1,79 @@
+/*SELECCION UNIVERSAL*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*SELECTOR DE ETIQUETA*/
+body{ 
+    background-color: rgb(7, 67, 139);
+}
+
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {color: 
+    goldenrod;
+}
+
+/*SELECTOR DE TIPO: CLASE*/
+/*Reutilizar el codigo*/
+
+.Tarjeta {
+    width: 320px;
+    background-color: dimgray;
+    border-radius: 3%;
+    /*CENTRAR ELEMENTOS*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    transition: all 0.4s ease-in-out; /*TRANSICION SUAVE*/
+}
+
+/*PSEUDOCLASE HOVER PARA CREAR EFECTOS*/
+.Tarjeta:hover {
+    background-color: rgb(56, 132, 203);
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
+
+
+
+.Tarjeta .CAJA-CONTENEDORA {
+    width: 200px;
+}
+
+.Tarjeta img {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.Tarjeta p{
+    color: rgb(18, 24, 36);
+    font-size: 20px;
+}
+
+/*SELECTOR DE TIPO ID*/
+/*ES UNICO*/
+
+#Logistica {
+    color: crimson;
+}
+
+#Transporte {
+    color: rgb(76, 63, 192);
+}
+
+#Cadena-de-Suministro {
+    color: darkmagenta;
+}
+
+#Calidad {
+    color: mediumspringgreen;
+}
