@@ -1,11 +1,26 @@
 /*SELECCION UNIVERSAL*/
+/*PONER ESTO POR DEFAULT*/
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /*SELECTOR DE ETIQUETA*/
+
+/*FUENTE DE GOOGLE FONT*/
+.outfit-NFDANIELA{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 body{ 
     background-color: rgb(7, 67, 139);
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    font-style: normal;   
 }
 
 main{
@@ -16,6 +31,8 @@ main{
 
 h1 {color: 
     goldenrod;
+    text-align: center;
+    margin: 20px;
 }
 
 /*SELECTOR DE TIPO: CLASE*/
@@ -32,6 +49,8 @@ h1 {color:
     justify-content: center;
     align-items: center;
     margin: 15px;
+    padding: 25px;
+    border: dotted rgb(255, 132, 0);
     transition: all 0.4s ease-in-out; /*TRANSICION SUAVE*/
 }
 
@@ -46,12 +65,15 @@ h1 {color:
 
 .Tarjeta .CAJA-CONTENEDORA {
     width: 200px;
+    height: 220PX;
 }
 
 .Tarjeta img {
     width: 250px;
     object-fit: cover;
     border-radius: 5%;
+    margin-top: 15px;
+    padding: 10px;
 }
 
 .Tarjeta p{
