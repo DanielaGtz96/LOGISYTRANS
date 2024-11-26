@@ -1,10 +1,13 @@
-// Seleccionar todas las tarjetas
-const tarjetas = document.querySelectorAll('.Tarjeta');
+function buscarContenido() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const tarjetas = document.querySelectorAll('.Tarjeta');
 
-// Añadir el evento de clic a cada tarjeta
-tarjetas.forEach(tarjeta => {
-    tarjeta.addEventListener('click', () => {
-        // Alternar la clase "expandida" en la tarjeta
-        tarjeta.classList.toggle('expandida');
+    tarjetas.forEach(tarjeta => {
+        const texto = tarjeta.textContent.toLowerCase();
+        if (texto.includes(input)) {
+            tarjeta.style.display = 'block';
+        } else {
+            tarjeta.style.display = 'none';
+        }
     });
-});
+}

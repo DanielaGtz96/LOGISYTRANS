@@ -2,73 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre logística, transporte, calidad y gestión de la cadena de suministro.">
+    <meta name="author" content="Daniela Morales Gutiérrez">
+    <meta name="keywords" content="Logística, Transporte, Cadena de suministro, Calidad, Distribución">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Logística y Transporte</title>
 </head>
 <body>
-    <h1>Logistica y Transporte</h1>
+    <header>
+        <h1>Logística y Transporte</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#Logistica">Logística</a></li>
+                <li><a href="#Transporte">Transporte</a></li>
+                <li><a href="#Cadena-de-Suministro">Cadena de Suministro</a></li>
+                <li><a href="#Calidad">Calidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Barra de búsqueda -->
     <div class="search-container">
-        <input type="text" class="search-bar" placeholder="Buscar...">
-        <button class="search-button">🔍</button>
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar...">
+        <button class="search-button" onclick="buscarContenido()">🔍</button>
     </div>
 
-    <main>
-        <div class="Tarjeta">
-            <h2 id="Logistica">Logistica</h2>
-        <div class="CAJA CONTENEDORA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Ib_GTvGv7dAhFtuGaluqucBNU1gcZXxFlQ&s" alt="Imagen de logistica">
-        </div>
-            <p>Es el conjunto de actividades que se realizan para gestionar el movimiento de productos y materias primas, desde su adquisición hasta su entrega al cliente</p>
-            <!-- Contenido adicional -->
-            <div class="info-adicional">
-                <p>La logística abarca almacenamiento, transporte y distribución, garantizando eficiencia y calidad en los procesos.</p>
-            </div>
-
+    <main id="contenido-principal">
+        <!-- Tarjeta: Logística -->
+        <div class="Tarjeta" id="Logistica">
+            <h2>Logística</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Ib_GTvGv7dAhFtuGaluqucBNU1gcZXxFlQ&s" alt="Imagen de logística">
+            <p>La logística gestiona el movimiento de productos y materias primas, desde su adquisición hasta su entrega final.</p>
         </div>
 
-        <div class="Tarjeta">
-            <h2 id="Transporte">Transporte</h2>
-        <div class="CAJA CONTENEDORA"><img src="https://images.prismic.io/simpliroute/NWI5OTgxZDItYWE2Mi00ZjQwLWIyMDQtM2VlYWUwNmFjY2Zm_625d6965470ea2b306b410b0_camiones-transportando-mercancicc81a.jpg?auto=compress%2Cformat&rect=0%2C0%2C700%2C467&w=1920&fit=max&q=100" alt="Imagen de transporte">
-        </div>
-                <p>Es el movimiento de mercancías de un lugar a otro, utilizando diferentes medios de transporte, con el objetivo de entregar los productos a tiempo y en buenas condiciones.</p>
-            <!-- Contenido adicional -->
-            <div class="info-adicional">
-                <p>El transporte asegura que los productos lleguen a tiempo y en buenas condiciones mediante camiones, barcos o aviones.</p>
-            </div>
-
+        <!-- Tarjeta: Transporte -->
+        <div class="Tarjeta" id="Transporte">
+            <h2>Transporte</h2>
+            <img src="https://images.prismic.io/simpliroute/NWI5OTgxZDItYWE2Mi00ZjQwLWIyMDQtM2VlYWUwNmFjY2Zm_625d6965470ea2b306b410b0_camiones-transportando-mercancicc81a.jpg?auto=compress%2Cformat&rect=0%2C0%2C700%2C467&w=1920&fit=max&q=100" alt="Imagen de transporte">
+            <p>El transporte mueve mercancías entre puntos geográficos, asegurando la entrega oportuna y en buenas condiciones.</p>
         </div>
 
-        <div class="Tarjeta">
-            <h2 id="Cadena-de-Suministro">Cadena de Suministro</h2>
-        <div class="CAJA CONTENEDORA"><img src="https://logistica360.pe/wp-content/uploads/2023/11/cadena-reinicio.jpeg" alt="Imagen de cadena">
-        </div>
-                <p>Es el proceso que involucra la producción, distribución y entrega de un producto a los clientes, desde la compra de las materias primas hasta la entrega final. </p>
-            <!-- Contenido adicional -->
-            <div class="info-adicional">
-                <p>Desde la compra de materias primas hasta la entrega final, la cadena de suministro conecta todos los procesos clave.</p>
-            </div>
-
+        <!-- Tarjeta: Cadena de Suministro -->
+        <div class="Tarjeta" id="Cadena-de-Suministro">
+            <h2>Cadena de Suministro</h2>
+            <img src="https://logistica360.pe/wp-content/uploads/2023/11/cadena-reinicio.jpeg" alt="Imagen de cadena de suministro">
+            <p>Incluye todos los procesos necesarios para producir y entregar un producto, desde materias primas hasta el cliente final.</p>
         </div>
 
-        <div class="Tarjeta">
-            <h2 id="Calidad">Calidad</h2>
-        <div class="CAJA CONTENEDORA"><img src="https://postgrado.ucsp.edu.pe/wp-content/uploads/2020/12/proposito-gestion-calidad.jpg" alt="Imagen de calidad">
-        </div>
-                <p>Es la práctica de mantener la productividad, la eficiencia y la satisfacción del cliente cuando se trata de trasladar productos de un punto a otro.</p>
-            <!-- Contenido adicional -->
-            <div class="info-adicional">
-                <p>Garantiza estándares de calidad en todas las etapas, desde la producción hasta la entrega final del producto.</p>
-            </div>
-
+        <!-- Tarjeta: Calidad -->
+        <div class="Tarjeta" id="Calidad">
+            <h2>Calidad</h2>
+            <img src="https://postgrado.ucsp.edu.pe/wp-content/uploads/2020/12/proposito-gestion-calidad.jpg" alt="Imagen de calidad">
+            <p>Garantiza estándares óptimos en todas las etapas, desde producción hasta distribución.</p>
         </div>
     </main>
-    
-    <!-- Vincular el archivo JavaScript -->
-     <script src="script.js"></script>
 
+    <footer>
+        <p>&copy; 2024 Logística y Transporte. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
